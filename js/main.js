@@ -1,134 +1,11 @@
-const productos = [
+let productos = [];
 
-/** MATES **/
-
-    {
-        id: "trenzado",
-        titulo: "Mate Trenzado",
-        imagen: "./images/matetrenzado.jpg",
-        categoria: {
-            nombre: "Mates",
-            id:"mates",
-        },
-        precio: 10000
-    },
-    {
-        id: "torpedo",
-        titulo: "Mate Torpedo",
-        imagen: "./images/matetorpedo.jpg",
-        categoria: {
-            nombre: "Mates",
-            id:"mates",
-        },
-        precio: 11000,
-    },
-    {
-        id: "imperial",
-        titulo: "Mate Imperial",
-        imagen: "./images/mateimperial.jpg",
-        categoria: {
-            nombre: "Mates",
-            id:"mates",
-        },
-        precio: 13500
-    },
-    {
-        id: "superi",
-        titulo: "Mate Super Imperial",
-        imagen: "./images/matesuperimperial.jpg",
-        categoria: {
-            nombre: "Mates",
-            id:"mates",
-        },
-        precio: 16000
-    },
-
-/** TERMOS **/
-
-    {
-        id: "termo1",
-        titulo: "Autocebante 750ml",
-        imagen: "./images/termo1.png",
-        categoria: {
-            nombre: "Termos",
-            id:"termos",
-        },
-        precio: 10000
-    },
-    {
-        id: "termo2",
-        titulo: "Termo Media Manija 1L",
-        imagen: "./images/termo2.png",
-        categoria: {
-            nombre: "Termos",
-            id:"termos",
-        },
-        precio: 13000
-    },
-    {
-        id: "termo3",
-        titulo: "Termo Stanley 1L",
-        imagen: "./images/termo3.png",
-        categoria: {
-            nombre: "Termos",
-            id:"termos",
-        },
-        precio: 40000
-    },
-    {
-        id: "termo4",
-        titulo: "Termo St.System 1.2L",
-        imagen: "./images/termo4.png",
-        categoria: {
-            nombre: "Termos",
-            id:"termos",
-        },
-        precio: 80000
-    },
-
-/** YERBAS **/
-    
-    {
-        id: "canarias",
-        titulo: "Yerba Canarias 500g",
-        imagen: "./images/yerbacanaria.png",
-        categoria: {
-            nombre: "Yerbas",
-            id:"yerbas",
-        },
-        precio: 5000
-    },
-    {
-        id: "reiverde",
-        titulo: "Yerba ReiVerde 1kg",
-        imagen: "./images/yerbareiverde.png",
-        categoria: {
-            nombre: "Yerbas",
-            id:"yerbas",
-        },
-        precio: 7000
-    },
-    {
-        id: "tucangua",
-        titulo: "Yerba Tucangua 1kg",
-        imagen: "./images/yerbatucan.png",
-        categoria: {
-            nombre: "Yerbas",
-            id:"yerbas",
-        },
-        precio: 5000
-    },
-    {
-        id: "vieja",
-        titulo: "Yerba Picada Vieja 500g",
-        imagen: "./images/yerbavieja.png",
-        categoria: {
-            nombre: "TipoYerbas",
-            id:"yerbas",
-        },
-        precio: 3000
-    },
-]
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
 
 const containerProductos = document.querySelector("#containerProductos");
 const botonesCategorias = document.querySelectorAll(".btnCate");
@@ -154,8 +31,6 @@ function cargarProductos(productosElegidos) {
     })
     actualizarBotones();
 }
-
-cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -191,6 +66,26 @@ if (productoEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+    
+    Toastify({
+        text: "Agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #678d58, black)",
+          borderRadius: "2rem",
+          textTransform: "upperCase",
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
     if (productoEnCarrito.some(producto => producto.id === idBoton)){

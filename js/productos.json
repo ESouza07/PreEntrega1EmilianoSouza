@@ -1,0 +1,122 @@
+[
+    {
+            "id": "trenzado",
+            "titulo": "Mate Trenzado",
+            "imagen": "./images/matetrenzado.jpg",
+            "categoria": {
+                "nombre": "Mates",
+                "id": "mates"
+        },
+            "precio": 10000
+    },
+    {
+            "id": "torpedo",
+            "titulo": "Mate Torpedo",
+            "imagen": "./images/matetorpedo.jpg",
+            "categoria": {
+                "nombre": "Mates",
+                "id": "mates"
+        },
+            "precio": 11000
+    },
+    {
+            "id": "imperial",
+            "titulo": "Mate Imperial",
+            "imagen": "./images/mateimperial.jpg",
+            "categoria": {
+                "nombre": "Mates",
+                "id": "mates"
+        },
+            "precio": 13500
+    },
+    {
+            "id": "superi",
+            "titulo": "Mate Super Imperial",
+            "imagen": "./images/matesuperimperial.jpg",
+            "categoria": {
+                "nombre": "Mates",
+                "id": "mates"
+        },
+            "precio": 16000
+    },
+    {
+            "id": "termo1",
+            "titulo": "Autocebante 750ml",
+            "imagen": "./images/termo1.png",
+            "categoria": {
+                "nombre": "Termos",
+                "id": "termos"
+        },
+            "precio": 10000
+    },
+    {
+            "id": "termo2",
+            "titulo": "Termo Media Manija 1L",
+            "imagen": "./images/termo2.png",
+            "categoria": {
+                "nombre": "Termos",
+                "id": "termos"
+        },
+            "precio": 13000
+    },
+    {
+            "id": "termo3",
+            "titulo": "Termo Stanley 1L",
+            "imagen": "./images/termo3.png",
+            "categoria": {
+                "nombre": "Termos",
+                "id": "termos"
+        },
+            "precio": 40000
+    },
+    {
+            "id": "termo4",
+            "titulo": "Termo St.System 1.2L",
+            "imagen": "./images/termo4.png",
+            "categoria": {
+                "nombre": "Termos",
+                "id": "termos"
+        },
+            "precio": 80000
+    },
+    {
+            "id": "canarias",
+            "titulo": "Yerba Canarias 500g",
+            "imagen": "./images/yerbacanaria.png",
+            "categoria": {
+                "nombre": "Yerbas",
+                "id": "yerbas"
+        },
+            "precio": 5000
+    },
+    {
+            "id": "reiverde",
+            "titulo": "Yerba ReiVerde 1kg",
+            "imagen": "./images/yerbareiverde.png",
+            "categoria": {
+                "nombre": "Yerbas",
+                "id": "yerbas"
+        },
+            "precio": 7000
+    },
+    {
+            "id": "tucangua",
+            "titulo": "Yerba Tucangua 1kg",
+            "imagen": "./images/yerbatucan.png",
+            "categoria": {
+                "nombre": "Yerbas",
+                "id": "yerbas"
+        },
+            "precio": 5000
+    },
+    {
+            "id": "vieja",
+            "titulo": "Yerba Picada Vieja 500g",
+            "imagen": "./images/yerbavieja.png",
+            "categoria": {
+                "nombre": "TipoYerbas",
+                "id": "yerbas"
+        },
+            "precio": 3000
+    }
+]

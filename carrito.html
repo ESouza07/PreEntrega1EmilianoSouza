@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Matte</title>
+    <link rel="shortcut icon" href="images/logopng.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a class="btnMenu btnVolver" href="index.html"><i class="bi bi-arrow-return-left"></i>Seguir Comprando
+                        <a class="btnMenu btnVolver" href="home.html"><i class="bi bi-arrow-return-left"></i>Seguir Comprando
                         </a>
                     </li>
                     <li>
@@ -27,6 +29,7 @@
             </nav>
             <footer>
                 <p class="txtFooter">© 2023 Emiliano Souza</p>
+                <a class="txtContacto" href="contacto.html"><p>Contactanos</p></a>
             </footer>
         </aside>
         <main>
@@ -49,14 +52,15 @@
                         </div>
                         <button id="carritoAccionesComprar" class="carritoAccionesComprar">Comprar Ahora</button>
                     </div>
-                </div>
-                <p id="carritoCompraFinal" class="carritoCompraFinal oculto">Muchas Gracias por tu compra <i class="bi bi-emoji-laughing-fill"></i></p>
-
+                </div>    
             </div>
         </main>
     </div>
    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/carrito.js"></script>
+
     
 </body>
 </html>

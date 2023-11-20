@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Le Matte</title>
+  <link rel="shortcut icon" href="images/logopng.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Contenido -->
+
+  <main class="display">
+    <div class="contacto">
+        <h1 class="contactoT">Contacto</h1>
+        <p class="contactoP">Nos interesa conocerte y saber tu opinion. En caso de tener alguna sugerencia sobre cambios o productos nuevos para incorporar, escribinos debajo. Cualquier aporte es bienvenido para
+        ayudarnos a mejorar y crecer. <strong class="gracias">¡Muchas Gracias!</strong></p>
+    </div>
+    <form id="form" class="contactoF">
+        <label for="nombre">Nombre</label>
+        <input class="contactoInpu" type="text" name="nombre" id="nombre" placeholder="Tú Nombre">
+        <label for="mail">Email</label>
+        <input class="contactoInpu" type="email" name="mail" id="mail" placeholder="Tú email de contacto">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="contactoInpu" name="mensaje" id="mensaje" cols="0" rows="3"
+            placeholder="Escribinos tú mensaje"></textarea>
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+
+    <footer>
+        <a class="txtContacto" href="home.html"><p>PRODUCTOS</p></a>
+        <a class="txtContacto" href="index.html"><p>INICIO</p></a>
+        <p class="txtFooter">© 2023 Emiliano Souza</p>
+    </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/contacto.js"></script>
+
+</body>
+
+</html>
